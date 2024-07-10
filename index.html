@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://kit.fontawesome.com/e425e7a0eb.js" crossorigin="anonymous"></script>
+    </head>
+<body>
+    <h3>Contactame</h3>
+        <form action="" class="formulario">
+            <!-- Grupo Nombres -->
+            <div class="formulario_grupo" id="grupo_nombres">
+                <label for="nombres" class="formulario_label">Nombres</label>
+                <div class="formulario_grupo_input">
+                    <div class="container_input">
+                        <input type="text" class="formulario_input" id="nombres" name="nombres" placeholder="Pepito">
+                        <span id="icono_error_nombres">💔</span>
+                        <span id="icono_ok_nombres">👍</span>
+                        
+                    </div>
+                     <p class="formulario_input_error" id="error_nombres">Solo admite texto y un maximo de 60 caracteres</p>
+                </div>
+                 </div>
+
+            <!-- Grupo Apellido -->
+            <div class="formulario_grupo" id="grupo_apellidos">
+                <label for="apellidos" class="formulario_label">Apellidos</label>
+                <div class="formulario_grupo_input">
+                    <div class="container_input">
+                        <input type="text" class="formulario_input" id="apellidos" name="apellidos" placeholder="Perez">
+                        <span id="icono_error_apellidos">💔</span>
+                        <span id="icono_ok_apellidos">👍</span>
+                    </div>
+                    <p class="formulario_input_error" id="error_apellidos">Solo admite texto y un maximo de 60 caracteres</p>
+                </div>
+            </div>
+
+
+            <!-- Grupo Identificacion -->
+            <div class="formulario_grupo" id="grupo_identificacion">
+                <label for="identificacion" class="formulario_label">Cedula</label>
+                <div class="formulario_grupo_input">
+                    <div class="container_input">
+                        <input type="text" class="formulario_input" id="identificacion" name="identificacion"
+                        placeholder="123456789">
+                        <span id="icono_error_identificacion">💔</span>
+                        <span id="icono_ok_identificacion">👍</span>
+                    </div>
+                    
+                    <p class="formulario_input_error" id="error_identificacion">usar solo numeros</p>
+                </div>
+            </div>
+
+
+            <!-- Grupo Correo -->
+            <div class="formulario_grupo" id="grupo_correo">
+                <label for="correo" class="formulario_label">Correo</label>
+                <div class="formulario_grupo_input">
+                    <div class="container_input">
+                        <input type="text" class="formulario_input" id="correo" name="correo"
+                        placeholder="pepitoperez@dominio.com">
+                        <span id="icono_error_correo">💔</span>
+                        <span id="icono_ok_correo">👍</span>
+                    </div>
+                    <p class="formulario_input_error" id="error_correo">El correo solo puede contener letras, numeros, puntos, guiones,
+                        guiones bajo.</p>
+                </div>
+            </div>
+
+            <!-- Grupo Usuario -->
+            <div class="formulario_grupo" id="grupo_usuario">
+                <label for="usuario" class="formulario_label">Usuario</label>
+                <div class="formulario_grupo_input">
+                    <div class="container_input">
+                        <input type="text" class="formulario_input" id="usuario" name="usuario" placeholder="Pepito90">
+                        <span id="icono_error_usuario">💔</span>
+                        <span id="icono_ok_usuario">👍</span>
+                    </div>
+                    <p class="formulario_input_error" id="error_usuario">Usuario de 4 a 25 digitos y solo puede contener
+                        numeros, letras, guion bajo</p>
+                </div>
+            </div>
+
+            <!-- Grupo Observaciones -->
+            <div class="formulario_grupo" id="grupo_observaciones">
+                <label for="observaciones" class="formulario_label">observaciones</label>
+                <div class="formulario_grupo_input">
+                    <div class="container_input">
+                        <textarea name="" id="observaciones" cols="75" rows="5"></textarea>
+                        <span id="icono_error_observaciones">💔</span>
+                        <span id="icono_ok_observaciones">👍</span>
+                    </div>
+                    
+                    <p class="formulario_input_error" id="error_observaciones">Cantidad maxima 200 caracteres</p>
+                </div>
+            </div>
+            <!-- grupo boton -->
+            <div class="formulario_grupo grupo_boton">
+                <button type="submit" class="formulario_boton" id="btnvalidar" onclick="validar(event)">Enviar</button>
+                <p class="formulario_input_error" id="mensaje_exito">Formulario enviado exitosamente</p>
+            </div>
+            <!-- grupo Mensaje -->
+            <div class="formulario_mensaje">
+                <p class="formulario_input_error"  id="error_vacios"><i class=" fa-solid fa-triangle-exclamation">
+                </i><br>Error: </br>Por favor deligencias el formulario correctamente.</p>
+            </div>
+        </form>
+    
+</body>
+<script src="./js/validador.js"></script>
+</html>
